@@ -17,7 +17,7 @@
     <a href="#contributing">Contributing</a>
     <br />
     <br />
-    <a href="README_en.md">🌍 English</a> | <a href="README.md">🇨🇳 简体中文</a> | <a href="README_zh-TW.md">🇹🇼 繁體中文</a>
+    English | <a href="README.md">简体中文</a> | <a href="README_zh-TW.md">繁體中文</a>
   </p>
   <p align="center">
    <img src="https://img.shields.io/npm/l/gitbook-plugin-mygitalk.svg" alt="Apache License">
@@ -27,15 +27,21 @@
   </p>
 </p>
 
+## Project Status
+
+> **This project is no longer maintained.**
+>
+> Beike/Lianjia has upgraded its human-verification flow, and it is no longer the slider CAPTCHA flow this repository was originally built around. As a result, the current automated crawling pipeline can no longer be considered reliable or usable as-is.
+>
+> The repository is being kept as a historical reference for the architecture, data-processing pipeline, and frontend implementation. It will not be updated to support the new verification flow. If you only want the analytics/visualization parts, use your own or other compliant data sources.
+
 ## Project Overview
 
-The Lianjia Rental Data Collection & Analysis System is a rental data processing platform built with Python + Vue3. It primarily addresses the automated collection, processing of Lianjia's anti-crawling mechanisms, data storage, analysis, and visualization of rental data from Lianjia.com. 
+The Lianjia Rental Data Collection & Analysis System was a rental data processing platform built with Python + Vue3. Its original goal was automated collection, storage, analysis, and visualization of rental data from Lianjia/Beike.
 
-The backend uses FastAPI to build API services, the crawler module combines DrissionPage for browser automation control, the verification code processing module uses OpenCV to identify and handle slider CAPTCHAs, data processing employs PySpark for batch analysis, and PostgreSQL serves as the primary database for storing crawled property data and analysis results. 
+The backend uses FastAPI to build API services, the crawler module combines DrissionPage for browser automation control, data processing employs PySpark for batch analysis, and PostgreSQL serves as the primary database for storing crawled property data and analysis results.
 
-The frontend is built with Vue3 and Element Plus for the user interface, implementing data visualization through ECharts. The system also features user authentication, IP proxy management, and CAPTCHA processing to effectively counter Lianjia's anti-crawling mechanisms, ensuring stable and reliable data collection.
-
-**🚀 Ready to Use**: The project comes pre-configured with all environment settings. Simply clone the code and use `docker-compose up -d` to start the system with one command, no complex configuration required.
+The frontend is built with Vue3 and Element Plus for the user interface, implementing data visualization through ECharts. At this point, the repository is best treated as a reference implementation, especially for the data-processing, task-management, and frontend visualization parts.
 
 ## Data Source
 
@@ -49,7 +55,7 @@ The frontend is built with Vue3 and Element Plus for the user interface, impleme
 ### Data Collection Features
 
 - Support for automated data crawling from single cities across multiple pages
-- Intelligent CAPTCHA recognition and processing (slider CAPTCHAs, etc.)
+- Historical support for slider CAPTCHA handling; this no longer works after the upstream verification upgrade
 - IP proxy pool management and rotation strategies
 - Scheduled tasks and task queue management
 
