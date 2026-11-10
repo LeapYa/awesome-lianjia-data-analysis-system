@@ -16,6 +16,7 @@ import UserSettings from '../views/UserSettings.vue'
 import SystemSettings from '../views/SystemSettings.vue'
 import ScheduledTasks from '../views/ScheduledTasks.vue'
 import IpManagement from '../views/IpManagement.vue'
+import AccountPool from '../views/AccountPool.vue'
 
 const routes = [
   {
@@ -29,6 +30,12 @@ const routes = [
     name: 'TaskList',
     component: TaskList,
     meta: { titleKey: 'nav.taskList', requiresAuth: true }
+  },
+  {
+    path: '/account-pool',
+    name: 'AccountPool',
+    component: AccountPool,
+    meta: { titleKey: 'menu.accountPool', requiresAuth: true },
   },
   {
     path: '/ip-management',

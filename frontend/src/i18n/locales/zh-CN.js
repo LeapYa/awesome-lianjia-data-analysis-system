@@ -5,6 +5,7 @@ export default {
     footer: '© {year} 栖云数坊 · 基于Vue.js和FastAPI开发 · 版权所有'
   },
   menu: {
+      accountPool: '账号池',
     home: '首页',
     tasks: '爬虫任务',
     ipManagement: 'IP管理',

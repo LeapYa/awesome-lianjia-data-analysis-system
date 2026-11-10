@@ -140,6 +140,8 @@ async def custom_json_serialization(request: Request, call_next):
 
 # 注册认证路由
 app.include_router(auth.router)
+import account_api
+app.include_router(account_api.router)
 
 # 数据库连接参数
 DB_CONFIG = {

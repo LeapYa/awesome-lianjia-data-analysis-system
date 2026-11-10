@@ -32,7 +32,11 @@
               <el-icon><List /></el-icon>
               <span>{{ $t('menu.tasks') }}</span>
             </el-menu-item>
-            <el-menu-item index="/ip-management">
+            <el-menu-item index="/account-pool">
+              <el-icon><UserFilled /></el-icon>
+              <span>{{ $t('menu.accountPool') }}</span>
+            </el-menu-item>
+          <el-menu-item index="/ip-management">
               <el-icon><Connection /></el-icon>
               <span>{{ $t('menu.ipManagement') }}</span>
             </el-menu-item>
@@ -134,7 +138,7 @@
 <script>
 import { computed, ref, onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-import { Home, List, Document, DataAnalysis, HomeFilled, Fold, Setting, User, SwitchButton, ArrowDown, Timer, Connection, Expand } from '@element-plus/icons-vue';
+import { Home, List, Document, DataAnalysis, HomeFilled, Fold, Setting, User, UserFilled, SwitchButton, ArrowDown, Timer, Connection, Expand } from '@element-plus/icons-vue';
 import LanguageSwitcher from './components/LanguageSwitcher.vue';
 import api from './api/api';
 import { ElMessage, ElMessageBox } from 'element-plus';
@@ -145,6 +149,7 @@ export default {
   
   components: {
     Home,
+    UserFilled,
     List,
     Document,
     DataAnalysis,

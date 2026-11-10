@@ -5,6 +5,7 @@ export default {
     footer: '© {year} 棲雲數坊 · 基於Vue.js和FastAPI開發 · 版權所有'
   },
   menu: {
+      accountPool: '账号池',
     home: '首頁',
     tasks: '爬蟲任務',
     ipManagement: 'IP管理',

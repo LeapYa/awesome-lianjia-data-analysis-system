@@ -5,6 +5,7 @@ export default {
     footer: '© {year} Qiyun Data Workshop · Powered by Vue.js & FastAPI · All rights reserved'
   },
   menu: {
+      accountPool: '账号池',
     home: 'Home',
     tasks: 'Crawler Tasks',
     ipManagement: 'IP Management',

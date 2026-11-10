@@ -1,0 +1,10 @@
+
+# 账号库与滑块样本（含明文密码，别入库）
+data/accounts.db
+data/slider_log/
+data/crawl_*.jsonl
+data/multi_page.jsonl
+data/bj_pg23.jsonl
+data/*_test.jsonl
+__pycache__/
+*.pyc
